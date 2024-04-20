@@ -15,9 +15,7 @@ bool solve(string& str,int n,int s,int e){
   
   return solve(str,n,s+1,e-1);
    
-   
-}
-
+   }
 int main() {
     string str="aba";
     int n=str.length();
