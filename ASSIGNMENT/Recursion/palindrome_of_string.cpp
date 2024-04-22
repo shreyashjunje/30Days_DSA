@@ -8,11 +8,11 @@ bool solve(string& str,int n,int s,int e){
   if(s>=e){
       return true;
   }
-  
+
   if(str[s]!=str[e]){
       return false;
   }
-  
+
   return solve(str,n,s+1,e-1);
    }
 int main() {
@@ -21,6 +21,5 @@ int main() {
     int s=0;
     int e=n-1;
     cout<<solve(str,n,s,e);
-     
     return 0;
 }
